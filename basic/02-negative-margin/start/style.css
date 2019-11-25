@@ -1,7 +1,9 @@
-h1, p {
+h1,
+p {
     margin: 0;
     padding: 0;
 }
+
 body {
     background-color: #ddd;
 }
@@ -13,19 +15,22 @@ body {
     text-align: center;
     border-right: 2px solid #ccc;
     border-bottom: 2px solid #ccc;
-    margin: 100px auto 0;
+    margin: 300px auto 0;
+    padding: 1px;
 }
 
 .camp img {
-    
+    /* display: block; */
+    /* background-color: orange; */
+    margin-top: -205px;
+    /* margin-bottom: -50px; */
 }
 
 .camp h1 {
-    color: forestgreen; 
+    color: forestgreen;
     margin: 20px;
 }
 
 .camp p {
     margin: 20px;
 }
-

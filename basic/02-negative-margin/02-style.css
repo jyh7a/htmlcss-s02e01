@@ -1,38 +1,120 @@
 body {
-    margin: 0;
-    background-color: #ddd;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #ddd;
 }
 
 .header {
-    height: 300px;
-    background-image: url(images/cover.png);
-    background-position: center;
-    overflow: hidden;
+  height: 300px;
+  background-image: url(images/cover.png);
+  background-position: center;
+  overflow: hidden;
+  margin-bottom: -100px;
 }
 
 .contents {
-    background-color: white;
-    width: 860px;
-    margin-bottom: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 50px;
+  background-color: white;
+  width: 860px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-top: -100px; */
+  padding: 50px;
 }
 
 .box-wrapper {
-    overflow: hidden;
-    width: 960px;
-    margin: 50px auto;
+  /* display: flow-root; */
+  /* overflow: hidden; */
+  width: 960px;
+  margin: 50px auto;
 }
 
 .box {
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-    margin: 5px;
-    float: left;
-    text-align: center;
-    line-height: 100px;
-    font-family: 'arial';
-    font-size: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  margin: 5px;
+  float: left;
+  text-align: center;
+  line-height: 100px;
+  font-family: 'arial';
+  font-size: 50px;
+  position: relative;
+}
+
+.box-inside {
+  background-color: red;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url(images//cover01.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 0.5s;
+}
+
+.box:hover .box-inside{
+  margin: -30px;
+}
+
+/* .box.select {
+  background-color: orangered;
+  margin-left: -50px;
+  margin-right: -50px;
+} */
+
+.section {
+  padding: 20px;
+  background-color: #efefef;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+}
+
+.section ul {
+  padding-left: 1em;
+}
+
+.section li::before {
+  content: ' ';
+  background-color: orangered;
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-right: 0.3em;
+  margin-left: -15px;
+}
+
+.list li {
+  margin-bottom: 0.5em;
+}
+
+.map {
+  width: auto;
+  background-color: white;
+  margin: 30px 0px;
+  padding: 30px;
+  transition: .5s ease-in-out;
+}
+
+.map:hover {
+  margin: 30px -100px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
 }

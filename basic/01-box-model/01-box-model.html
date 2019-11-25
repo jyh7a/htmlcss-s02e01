@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-        <title>01 box-model</title>
-        <style>
-            
-        </style>
-	</head>
-	<body>
 
-      
-       
-	</body>
+<head>
+	<meta charset="UTF-8">
+	<title>01 box-model</title>
+	<style>
+		div {
+			background-color: orange;
+			width: 50%;
+			height: 200px;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+
+		div.right {
+			margin-left: auto;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div>wow</div>
+	<div class="right">wow</div>
+	<div>wow</div>
+	<div class="right">wow</div>
+
+</body>
+
 </html>
